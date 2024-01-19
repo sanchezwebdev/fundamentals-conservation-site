@@ -23,7 +23,6 @@ body {
 .flex-container {
   position: relative;
   overflow-x: hidden;
-  max-width: 1400px;
 }
 
 .grid {
@@ -204,7 +203,6 @@ Media Queries
     display: grid;
     width: 100%;
     grid-gap: 10vh;
-    margin-bottom: 10vh;
     grid-area: about-main;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 20vh repeat(8, 40vh);

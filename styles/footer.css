@@ -3,6 +3,7 @@ Home Page Footer section styling
 ******************/
 
 footer {
+  
   font-family: "Crimson Pro";
   font-size: 24px;
   color: white;
@@ -23,12 +24,14 @@ footer {
 }
 
 .footer-bottom {
+  /* border: solid red 1px; */
   flex-direction: column;
   justify-content: center;
   position: relative;
   background-color: #0d2818;
   display: flex;
   height: 100vh;
+  max-height: 500px;
 }
 
 .footer-grid {
@@ -53,7 +56,7 @@ footer {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  max-width: 750px;
+  max-width: 1200px;
 }
 .connect {
   justify-content: space-evenly;
@@ -68,10 +71,10 @@ footer {
   width: 100%;
   height: 25%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  max-width: 750px;
+  max-width: 80%;
 }
 
 .footer-pines {
