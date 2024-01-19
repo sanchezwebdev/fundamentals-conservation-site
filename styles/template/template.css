@@ -1,0 +1,186 @@
+/*****************
+Styling template for About, Contact, Preservation, Protection, and Volunteer pages
+******************/
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&display=swap");
+
+@font-face {
+  font-family: "North Forest";
+  src: url("../../public/fonts/NORTH\ FOREST.ttf") format("truetype"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  position: relative;
+  overflow-x: hidden;
+  max-width: 1400px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "template-main   template-main"
+    "footer footer";
+}
+
+a {
+  text-decoration: none;
+  color: #606c38;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.template-main {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  grid-area: template-main;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20vh repeat(3,auto);
+  grid-template-areas:
+  "title title"
+    "template-text template-text"
+    "template-img template-img"
+    "footer footer";
+}
+
+.title {
+  border-bottom: 1px solid rgba(96, 108, 56, 0.5);
+  padding-bottom: 2%;
+  width: 70%;
+  color: rgba(13, 40, 24, .7);
+  display: flex;
+  justify-content: center;
+  text-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  top: 0;
+  grid-area: title;
+  height: auto;
+  font-family: 'North Forest';
+  font-size: 36px;
+  font-weight: 700;
+
+}
+
+.template-text {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: template-text;
+  font-family: "North Forest";
+  text-wrap: wrap;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 400;
+  padding: 5% 10%;
+  margin-bottom: 50px;
+  opacity: 1;
+  animation: fadeIn 3s ease-in-out; 
+}
+
+.template-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  grid-area: template-img;
+}
+
+.template-img img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-bottom {
+  height: 70vh;
+}
+.footer{
+  grid-area: footer;
+}
+
+
+/************
+Animation Keyframes
+*************/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media (min-width: 400px) {
+  .template-text {
+    line-height: 20px;
+  }
+  .template-text {
+    font-size: 20px;
+  }
+}
+
+/************
+Media Queries
+*************/
+
+@media (min-width: 710px) {
+  .template-main {
+    margin-top: 2vh;
+    font-size: 20px;
+    display: grid;
+    width: 100%;
+    grid-area: template-main;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px auto;
+    grid-template-areas:
+    "title title"
+    "template-text template-img";
+  }
+
+  .title{
+    letter-spacing: 5px;
+    font-size: 62px;
+    border-bottom: none;
+  }
+
+  .template-text {
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: template-text;
+    text-wrap: wrap;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 400;
+    padding: 10%;
+    margin-bottom:0;
+  }
+}
+
+
+@media (min-width: 1000px){
+  .template-text{line-height: 25px;}
+}
+@media (min-width: 1400px){
+  .template-text{line-height: 30px;}
+}

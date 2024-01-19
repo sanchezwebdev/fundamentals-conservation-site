@@ -1,0 +1,48 @@
+/* Font import from Google Fonts for Crimson Pro */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&display=swap");
+
+/* Custom font face for North Forest */
+@font-face {
+  font-family: "North Forest"; 
+  src: url("../public/fonts/NORTH\ FOREST.ttf") format("truetype"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  position: relative;
+  overflow-x: hidden;
+  max-width: 1400px;
+}
+
+/* Grid layout for main sections */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "main-top   main-top"
+    "buckets buckets"
+    "lake lake"
+    "donate-container donate-container"
+    "footer footer";
+}
+
+a {
+  text-decoration: none;
+  color: #606C38;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
