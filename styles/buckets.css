@@ -3,9 +3,10 @@ Home Page Buckets section
 ******************/
 
 .buckets {
+  /* border: red solid 1px; */
   margin-bottom: 15vh;
   height: 100%;
-  width: 100%;
+  justify-self: center;
   display: grid;
   grid-gap: 50px;
   grid-area: buckets;
@@ -70,9 +71,9 @@ Media Queries
   .buckets {
     padding: 10px 0;
     height: 100%;
-    width: 100%;
+    width: 95%;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-area: buckets;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 400px;
@@ -82,6 +83,7 @@ Media Queries
       "bucket3";
   }
   .bucket {
+    border-radius: 20px;
     margin-top: 20px;
   }
 }

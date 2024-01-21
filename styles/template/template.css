@@ -23,7 +23,6 @@ body {
 .flex-container {
   position: relative;
   overflow-x: hidden;
-  /* max-width: 1400px; */
 }
 
 .grid {
@@ -45,10 +44,10 @@ footer a{
 }
 
 .template-main {
-  /* border: solid red 1px; */
   display: grid;
   place-items: center;
   width: 100%;
+  height: 100%;
   grid-area: template-main;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 20vh repeat(3,auto);
@@ -81,29 +80,27 @@ footer a{
 .template-text {
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   grid-area: template-text;
   font-family: "North Forest";
   text-wrap: wrap;
   text-align: center;
-  vertical-align: middle;
   font-weight: 400;
   padding: 5% 10%;
   margin-bottom: 50px;
   opacity: 1;
-  animation: fadeIn 3s ease-in-out; 
+  animation: fadeIn 2s ease-in-out; 
 }
 
 .template-img {
+  
   height: 100%;
   width: 100%;
-  object-fit: cover;
   grid-area: template-img;
 }
 
 .template-img img {
-  position: relative;
+  border-radius: 10px;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -123,9 +120,11 @@ Animation Keyframes
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 
@@ -154,7 +153,8 @@ Media Queries
     grid-template-rows: 150px auto;
     grid-template-areas:
     "title title"
-    "template-text template-img";
+    "template-text template-img"
+    "footer footer";
   }
 
   .title{
@@ -166,12 +166,9 @@ Media Queries
   .template-text {
     line-height: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     grid-area: template-text;
     text-wrap: wrap;
     text-align: center;
-    vertical-align: middle;
     font-weight: 400;
     padding: 10%;
     margin-bottom:0;
@@ -183,5 +180,5 @@ Media Queries
   .template-text{line-height: 25px;}
 }
 @media (min-width: 1400px){
-  .template-text{line-height: 30px;}
+  .template-text{line-height: 40px;}
 }

@@ -10,13 +10,11 @@ function adjustFontSize() {
   if (viewportWidth <= 710) {
       // Calculate the font size as the minimum of viewport width divided by 20 or 20
       const fontSize = Math.min(viewportWidth / 20, 20);
-      console.log(fontSize); // Log the calculated font size to the console
       customText.style.fontSize = `${fontSize}px`; // Set the font size of the element
   } else {
       // If the viewport width is greater than 710 pixels
       // Calculate the font size as the minimum of viewport width divided by 50 or 36
-      const fontSize = Math.min(viewportWidth / 50, 36);
-      console.log(fontSize); // Log the calculated font size to the console
+      const fontSize = Math.min(viewportWidth / 50, 52);
       customText.style.fontSize = `${fontSize}px`; // Set the font size of the element
   }
 }

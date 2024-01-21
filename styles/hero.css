@@ -70,10 +70,10 @@ Media Queries
       display: flex;
       align-items: center;
       justify-content: center;
-      line-height: 60px;
+      line-height: 100px;
       margin: 0;
-      font-size: 52px;
-      padding: 0 15%;
+      font-size: 72px;
+      padding: 0 10%;
     }
     .text-overlay{
         top: 15%;

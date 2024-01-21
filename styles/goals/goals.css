@@ -79,6 +79,7 @@ footer a {
   height: auto;
   font-family: 'North Forest';
   font-size: 36px;
+
 }
 
 .goals-text {  
@@ -187,9 +188,11 @@ Animation Keyframes
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 
@@ -231,3 +234,5 @@ Media Queries
   .img8, .img6 { font-size: 48px; }
   
 }
+
+

@@ -151,6 +151,9 @@ Media Queries
   }
 
   .coming-soon {
+    background-color: #fefae0;
+    width: 100%;
+    height: 100%;
     font-size: 56px;
     line-height: 70px;
     display: flex;

@@ -3,8 +3,9 @@ Home Page Donate section styling
 ******************/
 
 .donate-container {
+  /* border: solid red 1px; */
   margin-bottom: 15vh;
-    overflow-y: hidden;
+    overflow: hidden;
     position: relative;
     grid-area: donate-container;
     display: grid;
@@ -20,10 +21,11 @@ Home Page Donate section styling
     object-fit: cover;
     height: 100%;
     width: 100%;
-    vertical-align: middle;
+    /* vertical-align: middle; */
   }
   
   .donate-grid {
+    /* border: solid red 1px; */
     grid-area: donate-grid;
     position: absolute;
     display: grid;
@@ -67,8 +69,9 @@ Home Page Donate section styling
   
   .button-container {
     grid-area: button-container;
-    height: 100%;
+    height: auto;
     width: 100%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +83,6 @@ Home Page Donate section styling
     height: 75px;
     z-index: 100;
     border: 3px #fefae0 solid;
-    touch-action: manipulation;
     border-radius: 8px;
     background-color: rgba(249, 166, 32, 1);
     color: #fefae0;
@@ -151,4 +153,10 @@ Media Queries
     .donate-inner-text{
         line-height: 50px;
     }
+
+  }
+  @media (min-width: 1400px){
+    .button-container {
+      margin-top: 0%;
+    } 
   }

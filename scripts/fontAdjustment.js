@@ -15,7 +15,7 @@ function adjustTopFontSize() {
     customText.style.fontSize = `${fontSize}px`;
   } else {
     // If false, calculate the font size based on the viewport width divided by 20, with a minimum font size of 64
-    const fontSize = Math.min((viewportWidth / 20), 64);
+    const fontSize = Math.min((viewportWidth / 20), 72);
 
     // Set the font size of the "text-overlay" element
     customText.style.fontSize = `${fontSize}px`;
@@ -33,7 +33,7 @@ function adjustBucketFontSize() {
       const fontSize = Math.min((viewportWidth / 12), 52);
       customText.style.fontSize = `${fontSize}px`;
     } else {
-      const fontSize = Math.min((viewportWidth / 20), 42);
+      const fontSize = Math.min((viewportWidth / 15), 56);
       customText.style.fontSize = `${fontSize}px`;
     }
   }
