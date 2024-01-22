@@ -1,23 +1,13 @@
 // Function to adjust the font size of the top text overlay
 function adjustTopFontSize() {
-  // Get the current viewport width
   const viewportWidth = window.innerWidth;
-
-  // Get the element with the ID "text-overlay"
   const customText = document.getElementById("text-overlay");
 
-  // Check if the viewport width is less than or equal to 710
   if (viewportWidth <= 710) {
-    // If true, calculate the font size based on the viewport width divided by 12, with a minimum font size of 52
     const fontSize = Math.min((viewportWidth / 12), 52);
-    
-    // Set the font size of the "text-overlay" element
     customText.style.fontSize = `${fontSize}px`;
   } else {
-    // If false, calculate the font size based on the viewport width divided by 20, with a minimum font size of 64
     const fontSize = Math.min((viewportWidth / 20), 72);
-
-    // Set the font size of the "text-overlay" element
     customText.style.fontSize = `${fontSize}px`;
   }
 }
