@@ -230,7 +230,7 @@ Media Queries
 
 @media(min-width:1200px){
 
-  .goals-text { font-size: 32px; }
+  .goals-text { font-size: 42px; }
   .img8, .img6 { font-size: 48px; }
   
 }
