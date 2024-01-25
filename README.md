@@ -1,8 +1,8 @@
-# NATURE CONSERVATION WEBSITE
+# HTML. CSS, Javascript Web Application
 
-This is a Vanilla HTML, CSS, Javascript application. It makes use of flexbox and grid layout systems. Javascript is used for a variety of puproses including dynamic font-size adjustment, sidemenu functionality, modal handling, scroll handling, and more. 
+This is a vanilla HTML, CSS, Javascript web application. It makes use of flexbox and grid layout systems. The applicatin is build to be responsive. 
 
-## Installation
+The idea was to build a web application that relies solely on fundamental web-development technologies. 
 
 ### Clone the Repository
 
