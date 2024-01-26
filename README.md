@@ -7,8 +7,8 @@ The idea was to build a web application that relies solely on fundamental web-de
 ### Clone the Repository
 
 ```bash
-git clone 
-cd your-repo-name
+git clone https://github.com/NuminousCode/fundamentals-conservation-site.git
+cd fundamentals-conservation-site
 ```
 
 ## Running the application
