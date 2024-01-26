@@ -21,7 +21,6 @@ body {
 .flex-container {
   position: relative;
   overflow-x: hidden;
-  /* max-width: 1400px; */
 }
 
 /* Grid layout for main sections */
