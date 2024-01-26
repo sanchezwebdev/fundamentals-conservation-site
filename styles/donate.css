@@ -3,7 +3,6 @@ Home Page Donate section styling
 ******************/
 
 .donate-container {
-  /* border: solid red 1px; */
   margin-bottom: 15vh;
     overflow: hidden;
     position: relative;
@@ -21,11 +20,11 @@ Home Page Donate section styling
     object-fit: cover;
     height: 100%;
     width: 100%;
-    /* vertical-align: middle; */
+
   }
   
   .donate-grid {
-    /* border: solid red 1px; */
+
     grid-area: donate-grid;
     position: absolute;
     display: grid;

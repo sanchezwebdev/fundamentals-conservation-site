@@ -107,7 +107,7 @@ footer a{
 }
 
 .footer-bottom {
-  height: 70vh;
+  height: 100vh;
 }
 .footer{
   grid-area: footer;
@@ -150,7 +150,7 @@ Media Queries
     width: 100%;
     grid-area: template-main;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 150px auto;
+    grid-template-rows: 150px 100%;
     grid-template-areas:
     "title title"
     "template-text template-img"
