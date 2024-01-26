@@ -14,14 +14,13 @@ Home Page Footer section styling
       "main-top-text   main-top-text";
   }
   .main-top-text {
-    margin: 10% 0;
     font-family: "North Forest";
     text-wrap: wrap;
     text-align: center;
     vertical-align: middle;
     font-weight: 400;
-    font-size: 36px;
-    padding: 10% 0;
+    font-size: 48px;
+    padding: 10%;
     grid-area: main-top-text;
   }
   .main-top-image {

@@ -3,8 +3,8 @@ Home Page Buckets section
 ******************/
 
 .buckets {
+  width: 90%;
   margin-bottom: 15vh;
-  height: 100%;
   justify-self: center;
   display: grid;
   grid-gap: 50px;
@@ -27,6 +27,7 @@ Home Page Buckets section
   grid-template-areas: bucket3;
 }
 .bucket {
+  border-radius: 20px;
   overflow: hidden;
   height: 100%;
   width: 100%;
