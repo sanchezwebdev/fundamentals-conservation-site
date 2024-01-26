@@ -90,7 +90,7 @@ footer a {
   font-family: "Crimson Pro";
   text-wrap: wrap;
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 400;
   padding: 5% 10%;
   opacity: 1;
@@ -225,12 +225,12 @@ Media Queries
   .img5 { background-size: cover; background-position: -200px 80%; }
   .img6 { background-size: cover; background-position: 400px 50%; font-size: 32px;}
   .img8 { background-size: cover; background-position: 0px 50%; font-size: 32px; }
-  
+  .goals-text { font-size: 26px; }
 }
 
 @media(min-width:1200px){
 
-  .goals-text { font-size: 42px; }
+  .goals-text { font-size: 36px; }
   .img8, .img6 { font-size: 48px; }
   
 }
