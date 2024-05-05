@@ -1,0 +1,81 @@
+/*****************
+Home Page Footer section styling
+******************/
+
+.main-top {
+    position:relative;
+    display: grid;
+    width: 100%;
+    grid-area: main-top;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 70vh auto;
+    grid-template-areas:
+      "image-and-overlay image-and-overlay"
+      "main-top-text   main-top-text";
+  }
+  .main-top-text {
+    font-family: "North Forest";
+    text-wrap: wrap;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 48px;
+    padding: 10%;
+    grid-area: main-top-text;
+  }
+  .main-top-image {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+  }
+  .text-overlay {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, top 0.3s ease;
+    color: #fefae0;
+    font-family: "North Forest";
+    font-weight: 500;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    text-shadow: 
+    -1px -1px 0 #606c38,
+    1px -1px 0 #606c38,
+    -1px 1px 0 #606c38,
+    1px 1px 0 #606c38; 
+  }
+
+  .image-and-overlay {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    grid-area: image-and-overlay;
+    height: auto;
+    overflow: hidden;
+  }
+
+  /************
+Media Queries
+*************/
+
+  @media (min-width: 710px) {
+    .main-top {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: minmax(800px, 50vh);
+      grid-template-areas: " main-top-text main-top-text image-and-overlay image-and-overlay";
+      margin-bottom: 5vh;
+    }
+    .main-top-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 100px;
+      margin: 0;
+      font-size: 72px;
+      padding: 0 10%;
+    }
+    .text-overlay{
+        top: 15%;
+    }
+  }
+ 

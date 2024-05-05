@@ -1,0 +1,1 @@
+const checkbox=document.getElementById("openSidebarMenu"),menuIcon=document.querySelector(".menu-icon");checkbox.addEventListener("change",function(){menuIcon.innerHTML=checkbox.checked?"close":"menu"});

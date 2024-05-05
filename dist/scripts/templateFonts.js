@@ -1,0 +1,1 @@
+function adjustFontSize(){var t,e=window.innerWidth,n=document.getElementById("text");e<=710?(t=Math.min(e/20,20),n.style.fontSize=t+"px"):(t=Math.min(e/50,52),n.style.fontSize=t+"px")}adjustFontSize(),window.addEventListener("resize",adjustFontSize);
