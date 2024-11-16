@@ -41,3 +41,12 @@ label {
   align-items: center;
   margin-right: 2rem;
 }
+
+@media(max-width: 420px){
+  .site-name{
+    font-size: 24px
+  }
+  .logo-title span {
+    font-size: 20px;
+  }
+}

@@ -12,6 +12,7 @@ Goals page styling
 }
 
 body {
+  
   padding: 0;
   margin: 0;
   height: 100%;
@@ -78,8 +79,7 @@ footer a {
   width: 100%;
   height: auto;
   font-family: 'North Forest';
-  font-size: 36px;
-
+  font-size: 24px;
 }
 
 .goals-text {  
@@ -90,7 +90,7 @@ footer a {
   font-family: "Crimson Pro";
   text-wrap: wrap;
   text-align: center;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 400;
   padding: 5% 10%;
   opacity: 1;
@@ -241,7 +241,10 @@ Media Queries
   .img5 { background-size: cover; background-position: -200px 80%; }
   .img6 { background-size: cover; background-position: 400px 50%; font-size: 32px;}
   .img8 { background-size: cover; background-position: 0px 50%; font-size: 32px; }
-  .goals-text { font-size: 26px; }
+
+  .title {
+    font-size: 36px;
+  }
 }
 
 @media(min-width:1200px){
