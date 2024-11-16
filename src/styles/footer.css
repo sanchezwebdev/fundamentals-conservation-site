@@ -10,7 +10,7 @@ footer {
   grid-area: footer;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   height: 100%;
   width: 100%;
 }
@@ -92,7 +92,6 @@ footer {
     font-family: 'North Forest';
     font-size: 18px;
     height: 100%;
-    word-break: break-all;
 }
 .logo-acronym{
     display: flex;
